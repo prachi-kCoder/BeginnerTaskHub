@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model-Box</title>
+    <link rel="stylesheet" href="styleModel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <button id="open">Click Me</button>
+    </div>
+    <div class="model-container">
+        <div class="model">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+            <h3>WHY WOMEN SHOULD INVEST?</h3>
+            <p>Empowering women to engage in stock market investing is pivotal for financial autonomy and long-term prosperity. By entering this domain traditionally dominated by men, women can shatter gender barriers and cultivate a sense of financial independence. Through strategic investments, they can secure their futures, mitigate economic uncertainties, and pave the way for generational wealth. Embracing the stock market offers women a platform to amplify their financial acumen and actively participate in shaping their financial destinies.</p>
+            <button>Ok <i class="fa fa-check" aria-hidden="true"></i></button>
+            <button>Cancel <i class="fa fa-times" aria-hidden="true"></i></button>  
+            <i id ="close" class="fas fa-times"></i>
+</div>
+    </div>
+    <!-- <script src="jquery.js" charset="UTF-8"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#open').click(function(){
+                $('.model-container').css('transform','scale(1)');
+            })
+            $('#close').click(function(){
+                $('.model-container').css('transform','scale(0)');
+            });
+        });
+    </script>
+</body>
+</html>

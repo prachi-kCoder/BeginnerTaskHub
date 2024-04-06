@@ -1,0 +1,106 @@
+*{
+margin: 0;
+padding:0;
+box-sizing:border-box;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+transition:all .2s linear;
+text-transform: capitalize;
+
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background:url(bgBlockPopUp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#open{
+    height: 50px;
+    width: 180px;
+    background: #fff;
+    color: #333;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+#open:hover{
+    letter-spacing:4px;
+    opacity: 0.8;
+
+}
+.model-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;left:0;
+    background: rgba(0,0,0,0.3);
+    transform: scale(0);
+}
+
+.model-container .model{
+    height: 580px;
+    max-width: 400px;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.model-container .fa-usd{
+    font-size:100px;
+    color:#f9ca24;
+    padding-bottom: 50px;
+    margin:10px 0;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.3),
+                    30px 30px 0 #ccc,
+                    -30px 30px 0 #333;
+    
+}
+
+.model-container .model h3{
+    color:#333;
+    font-size: 25px;
+    
+}
+.model-container .model p{
+    color:#666;
+    margin: 20px 0;
+}
+.model-container .model button{
+    height: 30px;
+    width:110px;
+    background: #333;
+    color:#fff;
+    outline:none;
+    border: none;
+    border-radius:50px;
+    font-size:17px;
+    cursor:pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.model-container .model button:hover{
+    opacity:0.8;
+    
+}
+.model-container .model .fa-times{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #333;
+}
+
+
